@@ -1,5 +1,8 @@
 /**
  * The Merge Sort
+ * Merge sort is a popular sorting algorithm that follows the divide-and-conquer approach. 
+ * It divides the unsorted array into smaller subarrays, sorts them, and then merges them back 
+ * into a sorted array. Here's a JavaScript implementation of merge sort:
  * This implementation of merge sort will sort the input array in ascending order. 
  * The mergeSort function recursively divides the array into smaller parts and 
  * then uses the merge function to combine them back into a sorted array. 
@@ -14,7 +17,7 @@ export function mergeSort(arr) {
   const leftHalf = arr.slice(0, middle);
   const rightHalf = arr.slice(middle);
 
-  // Recursively sort the left and right halves
+  // Recursively sort the left and right halves dividing the subarrays
   const sortedLeft = mergeSort(leftHalf);
   const sortedRight = mergeSort(rightHalf);
 
