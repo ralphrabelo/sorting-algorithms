@@ -1,4 +1,10 @@
-function mergeSort(arr) {
+/**
+ * The Merge Sort
+ * This implementation of merge sort will sort the input array in ascending order. 
+ * The mergeSort function recursively divides the array into smaller parts and 
+ * then uses the merge function to combine them back into a sorted array. 
+ */
+export function mergeSort(arr) {
   if (arr.length <= 1) {
     return arr;
   }
@@ -46,13 +52,7 @@ function merge(left, right) {
   return mergedArray;
 }
 
-// Example usage:
-const unsortedArray = [64, 34, 25, 12, 22, 11, 90];
-const sortedArray = mergeSort(unsortedArray);
-console.log(sortedArray); // Output: [11, 12, 22, 25, 34, 64, 90]
-//This implementation of merge sort will sort the input array in ascending order. 
-//The mergeSort function recursively divides the array into smaller parts and 
-//Then uses. The merge function to combine them back into a sorted array. 
+
 
 
 
