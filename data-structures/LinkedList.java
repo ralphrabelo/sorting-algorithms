@@ -67,23 +67,3 @@ class LinkedList<T> {
         System.out.println();
     }
 }
-
-// Uso da lista encadeada
-public class Main {
-    public static void main(String[] args) {
-        LinkedList<Integer> list = new LinkedList<>();
-
-        list.add(1);
-        list.add(2);
-        list.add(3);
-
-        list.print(); // Saída: 1 2 3
-
-        list.remove(2);
-
-        System.out.println("Contém 2: " + list.contains(2)); // Saída: Contém 2: false
-        System.out.println("Contém 3: " + list.contains(3)); // Saída: Contém 3: true
-
-        list.print(); // Saída: 1 3
-    }
-}

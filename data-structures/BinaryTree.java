@@ -55,7 +55,6 @@ class BinaryTree<T> {
         }
     }
 
-    
     public void preorder() {
         preorderRec(root);
         System.out.println();
@@ -96,24 +95,4 @@ class BinaryTree<T> {
     }
 }
 
-// Uso da árvore binária
-public class Main {
-    public static void main(String[] args) {
-        BinaryTree<Integer> tree = new BinaryTree<>();
 
-        tree.insert(5);
-        tree.insert(3);
-        tree.insert(8);
-        tree.insert(1);
-        tree.insert(4);
-        tree.insert(7);
-        tree.insert(9);
-
-        tree.preorder();
-        tree.inorder(); // Saída: 1 3 4 5 7 8 9
-        tree.postorder();
-
-        System.out.println("Contém 7: " + tree.search(7)); // Saída: Contém 7: true
-        System.out.println("Contém 6: " + tree.search(6)); // Saída: Contém 6: false
-    }
-}

@@ -51,18 +51,3 @@ class Stack<T> {
         return count;
     }
 }
-
-public class Main {
-    public static void main(String[] args) {
-        Stack<Integer> stack = new Stack<>();
-
-        stack.push(1);
-        stack.push(2);
-        stack.push(3);
-
-        System.out.println("Pop: " + stack.pop()); // Saída: Pop: 3
-        System.out.println("Peek: " + stack.peek()); // Saída: Peek: 2
-        System.out.println("Tamanho da pilha: " + stack.size()); // Saída: Tamanho da pilha: 2
-        System.out.println("Está vazia: " + stack.isEmpty()); // Saída: Está vazia: false
-    }
-}
