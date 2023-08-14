@@ -4,7 +4,7 @@ studying data structure algorithms
 
 
 Data Sctructures
-- FILO - Pilha
+- LIFO - Pilha
 - FIFO - Fila
 - List - Lista
 - Binary Tree - Ávore Binária
