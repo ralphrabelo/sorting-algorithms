@@ -1,11 +1,11 @@
 
-import { selectionSort } from './sorting-algorithms/selectionSort.js';
-import { bubbleSort } from './sorting-algorithms/bubbleSort.js';
-import { insertionSort } from './sorting-algorithms/insertionSort.js';
-import { shellSort } from './sorting-algorithms/shellSort.js';
-import { quickSort } from './sorting-algorithms/quickSort.js';
-import { mergeSort } from './sorting-algorithms/mergeSort.js';
-import { heapSort } from './sorting-algorithms/heapSort.js';
+import { selectionSort } from './selectionSort.js';
+import { bubbleSort } from './bubbleSort.js';
+import { insertionSort } from './insertionSort.js';
+import { shellSort } from './shellSort.js';
+import { quickSort } from './quickSort.js';
+import { mergeSort } from './mergeSort.js';
+import { heapSort } from './heapSort.js';
 
 let unsortedArray = [-1];
 
