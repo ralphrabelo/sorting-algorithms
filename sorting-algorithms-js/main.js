@@ -7,15 +7,17 @@ import { quickSort } from './quickSort.js';
 import { mergeSort } from './mergeSort.js';
 import { heapSort } from './heapSort.js';
 
-let unsortedArray = [-1];
+const arraySize = 50000;
 
 let initialTime;
 let finalTime;
 let differenceTime;
 let sortedArray;
 
-for (let i = 0; i < 50000; i++) {
-    unsortedArray.push(Math.floor(Math.random() * 1000));
+let unsortedArray = [];
+
+for (let i = 0; i < arraySize; i++) {
+    unsortedArray.push(Math.floor(Math.random() * arraySize*2));
 }
 
 const unsortedArrayBubble = unsortedArray.slice();
@@ -24,6 +26,7 @@ const unsortedArrayShell = unsortedArray.slice();
 const unsortedArrayQuick = unsortedArray.slice();
 const unsortedArrayMerge = unsortedArray.slice();
 const unsortedArrayHeap = unsortedArray.slice();
+const unsortedArrayJs = unsortedArray.slice();
 
 console.log(unsortedArray);
 
@@ -68,3 +71,14 @@ sortedArray = heapSort(unsortedArrayHeap);
 finalTime = new Date().getTime();
 differenceTime = finalTime - initialTime;
 console.log("heapSort: ", differenceTime);
+
+initialTime = new Date().getTime(); 
+unsortedArrayJs.sort((a,b) => {
+        if(a > b) return 1;
+        if(a < b) return -1;
+        return 0;
+    }); 
+finalTime = new Date().getTime();
+differenceTime = finalTime - initialTime;
+console.log("js sort: ", differenceTime);
+console.log("sorted array: ", unsortedArrayJs);

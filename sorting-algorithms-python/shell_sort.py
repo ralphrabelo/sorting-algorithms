@@ -1,7 +1,6 @@
 # Python3 program for implementation of Shell Sort
-# Python3 program for implementation of Shell Sort
 
-def shellSort(arr, n):
+def shell_sort(arr, n):
 	# code here
 	gap=n//2
 
